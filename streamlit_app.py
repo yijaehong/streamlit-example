@@ -103,10 +103,8 @@ with st.container():
             
             st.subheader("Pie Chart")
             
-            import matplotlib.font_manager as fm
-            fontprop = fm.FontProperties(fname='malgun.ttf')
-            #matplotlib 패키지 한글 폰트 설정 끝
-
+            matplotlib.rcParams['font.family'] = 'Malgun Gothic'
+            matplotlib.rcParams['axes.unicode_minus'] = False
          
             # plt.figure(figsize = (3,2))
             wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
