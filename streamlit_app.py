@@ -32,7 +32,7 @@ with st.sidebar:
     # Function for enabling clicked 
     def clear_button():
         st.session_state.clicked = False
-        st.session_state.text = ""
+        st.session_state.text = "https://www.mofa.go.kr/www/brd/m_4052/list.do?page="
     
     with col1:
         # Button for click me
