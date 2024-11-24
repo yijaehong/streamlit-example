@@ -102,10 +102,9 @@ with st.container():
             df_3.columns = ['Country', 'Count']
             
             st.subheader("Pie Chart")
-            
-            import matplotlib.font_manager as fm
+           
 
-
+            from matplotlib import font_manager, rc
             font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'
             font = font_manager.FontProperties(fname=font_path).get_name()
             rc('font', family=font)
