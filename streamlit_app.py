@@ -104,8 +104,9 @@ with st.container():
             st.subheader("Pie Chart")
             
             import matplotlib.font_manager as fm
-            fontprop = fm.FontProperties(fname='malgun.ttf')
-            plt.rcParams['axes.unicode_minus'] = False
+
+            font_list = fm.findSystemFonts(fontpaths = None, fontext = 'ttf')
+            font_list[:]
          
             # plt.figure(figsize = (3,2))
             wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
