@@ -103,8 +103,8 @@ with st.container():
             
             st.subheader("Pie Chart")
             
-            from matplotlib import font_manager
-            font_manager.findSystemFonts()
+            import matplotlib as mpl
+            mpl.rcParams['axes.unicode_minus'] = False
 
          
             # plt.figure(figsize = (3,2))
