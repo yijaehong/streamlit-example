@@ -105,7 +105,7 @@ with st.container():
          
             import plotly.express as px
          
-            fig = px.pie(df_3,values='Count', names='Country', title=f'number of {medal_type} medals',
+            fig = px.pie(df_3['Count'],values='Count', names='Country', title=f'number of {medal_type} medals',
                  height=300, width=200)
             st.plotly_chart(fig, theme=None)
 
