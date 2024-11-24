@@ -103,8 +103,6 @@ with st.container():
             
             st.subheader("Pie Chart")
             
-            matplotlib.rcParams['font.family'] = 'Malgun Gothic'
-            matplotlib.rcParams['axes.unicode_minus'] = False
          
             # plt.figure(figsize = (3,2))
             wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
