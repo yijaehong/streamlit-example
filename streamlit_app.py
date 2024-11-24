@@ -102,12 +102,7 @@ with st.container():
             df_3.columns = ['Country', 'Count']
             
             st.subheader("Pie Chart")
-         
-            import plotly.express as px
-         
-            fig = px.pie(df_3,values='Count', title=f'number of {medal_type} medals',
-                 height=300, width=200)
-            st.plotly_chart(fig, theme=None)
+        
 
             # plt.figure(figsize = (3,2))
             # wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
