@@ -105,8 +105,10 @@ with st.container():
             
             import matplotlib.font_manager as fm
 
-            font_list = fm.findSystemFonts(fontpaths = None, fontext = 'ttf')
-            font_list[:]
+
+            font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'
+            font = font_manager.FontProperties(fname=font_path).get_name()
+            rc('font', family=font)
          
             # plt.figure(figsize = (3,2))
             wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
