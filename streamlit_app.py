@@ -102,19 +102,17 @@ with st.container():
             df_3.columns = ['Country', 'Count']
             
             st.subheader("Pie Chart")
-           
-
-            from matplotlib import font_manager, rc
-            font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'
-            font = font_manager.FontProperties(fname=font_path).get_name()
-            rc('font', family=font)
          
+            import plotly.express as px
+            fig = px.pie(df_3['Count'])
+            st.plotly_chart(fig, theme=None)
+
             # plt.figure(figsize = (3,2))
-            wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
-            plt.pie(df_3['Count'], labels=df_3['Country'],autopct='%.1f%%',startangle=90,wedgeprops=wedgeprops)
-            plt.legend()
-            st.pyplot( plt )
-            st.write("Powered by Streamlit")
+            # wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
+            # plt.pie(df_3['Count'], labels=df_3['Country'],autopct='%.1f%%',startangle=90,wedgeprops=wedgeprops)
+            # plt.legend()
+            # st.pyplot( plt )
+            # st.write("Powered by Streamlit")
             
             df_3.set_index('Country', inplace=True)
 
