@@ -103,8 +103,8 @@ with st.container():
             
             st.subheader("Pie Chart")
             
-            import matplotlib as mpl
-            mpl.rcParams['axes.unicode_minus'] = False
+            import matplotlib.font_manager as fm
+            fontprop = fm.FontProperties(fname='malgun.ttf')
 
          
             # plt.figure(figsize = (3,2))
