@@ -1,12 +1,3 @@
 pandas
 streamlit
 beautifulsoup4
-html5lib
-lxml
-requests
-matplotlib
-plotly.express
-requests
-numpy
-folium
-time
