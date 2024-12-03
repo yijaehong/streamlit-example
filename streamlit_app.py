@@ -204,4 +204,4 @@ with st.container():
                 "Displaying geographical data on a map using Streamlit and Folium")
 
             #4 지도 시각화
-            st.components.v1.html(my_map._repr_html_(), width=800, height=600)
+            st.components.v1.html(my_map._repr_html_(), width=800, height=600, zoom=2)
