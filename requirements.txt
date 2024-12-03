@@ -1,3 +1,10 @@
 pandas
 streamlit
 beautifulsoup4
+html5lib
+lxml
+requests
+matplotlib
+requests
+numpy
+folium
