@@ -157,7 +157,7 @@ with st.container():
                 'Size': list_from_df3
             })            
             
-            st.map(data, width=800, height=600)
+            st.map(data, zoom=2)
             
 
 
